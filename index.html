@@ -1,0 +1,356 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abishalini-Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom Styles -->
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader"> 
+    <div class="loader-text">Loading....</div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+   <div class="logo">
+  <svg width="80" height="80" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Small AS Text -->
+    <text x="10" y="70" font-size="48" font-family="Arial, sans-serif" font-weight="bold" fill="#00aeac">
+      AS
+    </text>
+
+    <!-- Big Sparkle near top-right of AS -->
+    <g transform="translate(75,10)">
+      <polygon points="10,0 13,7 20,10 13,13 10,20 7,13 0,10 7,7" fill="#00aeac">
+        <animateTransform attributeType="xml"
+          attributeName="transform"
+          type="rotate"
+          from="0 10 10"
+          to="360 10 10"
+          dur="2s"
+          repeatCount="indefinite"/>
+      </polygon>
+      <circle cx="10" cy="10" r="12" fill="#00aeac" opacity="0.15" />
+    </g>
+  </svg>
+</div>
+
+
+      <ul class="nav-links">
+      <li><a href="#home">Home</a></li>               
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#project">Projects</a></li>
+  <li><a href="#certificate">Certificate</a></li>
+      </ul>
+      <div class="theme-toggle" id="themeToggle">
+        <span class="theme-toggle-icon moon">🌙</span>
+        <span class="theme-toggle-icon sun">🌞</span>
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#project">Projects</a>
+    <a href="#certificate">Certificate</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">          
+
+      <h1 class="hero-title">Abishalini Govindhasamy</h1>
+      <h2 class="hero-subtitle">Developer</h2>
+      <p class="hero-description">Skilled Python and MERN stack developer with a strong focus on building scalable,
+         efficient web applications. Committed to delivering clean code, intuitive design, and impactful solutions.</p>          
+
+      <div class="social-media">
+                <a href="https://www.linkedin.com/in/abishalinigovindasamy/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/AbishaliniGovindasamy"><i class='bx bxl-github'></i></a>
+                <a href="mailto:abi353@gmail.com"><i class='bx bxl-gmail'></i></a>
+
+            </div>
+      <a href="#" class="cta-button">Resume</a>
+
+    </div>
+    <img class="hero-img" src="images/profile.png" />
+    <spline-viewer class="hero-3d-model" url="https://prod.spline.design/udEck7AigAXS8Kqt/scene.splinecode"></spline-viewer>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h1 class="about-title">About Me</h1>
+    <div class="bento-grid">
+      <div class="card intro">
+        <h2 class="card-title">Hi there, I'm Abi</h2>
+        <p class="card-text">My journey into web development began during my 3rd semester, when I independently created a parallax website as part of a basic HTML project. That experience sparked a deep sense of purpose and excitement—an early indication of my passion for building meaningful digital experiences. The sense of achievement and creative fulfillment I felt that day became a turning point.
+
+Since then, I have committed myself to this path with focus and discipline. Over the past 10 months, I’ve been consistently strengthening my foundation in Python and gaining hands-on experience with the MERN stack. I take pride in writing clean, efficient code and designing responsive, user-centric applications. What started as a spark has now become a full-fledged pursuit of excellence in software development.
+
+</p>
+        <img src="images/gradient.png" class="background-img">
+        <div class="model-box"><img class="info-3d" src="images/profile.png"></div>
+      </div>
+      <div class="card tech">
+        <h2 class="card-title">Tech Stack</h2>
+       <p class="card-text">
+  <strong>Languages:</strong> Python, JavaScript, HTML, CSS<br>
+  <strong>Frontend:</strong> React.js, HTML5, CSS3, Tailwind CSS, Bootstrap<br>
+  <strong>Backend:</strong> Node.js, Express.js<br>
+  <strong>Database:</strong> MongoDB, MySQL<br>
+  <strong>Version Control:</strong> Git, GitHub<br>
+  <strong>Tools & Platforms:</strong> VS Code, Postman<br>
+  <strong>Others:</strong> REST APIs, JSON, EJS, JWT, CRUD Operations
+</p>
+
+        <img src="images/gradient 2.png" class="background-img">
+        <img src="images/skills group.png" class="skill-group">
+      </div>
+      <div class="card time">
+        <h2 class="card-title">Flexible Work Style</h2>
+        <p class="card-text">Open to work from anywhere in India | Flexible with remote or on-site opportunities across major cities.</p>
+        <img src="images/gradient3&4.png" class="background-img">
+        <!-- <button class="btn"><i class='bx bx-send'></i> Contact Me</button> -->
+      </div>
+      <div class="card passion">
+        <h2 class="card-title">Passion for Coding</h2>
+        <p class="card-text">A simple HTML project sparked my passion for coding. I enjoy solving problems, crafting user-friendly interfaces, and turning ideas into impactful digital solutions. Coding drives my curiosity, growth, and creativity.</p>
+        <img src="images/gradient3&4.png" class="background-img">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ✅ Skills Section -->
+  <section  id="skills" class="skills-section">
+    <h3 class="section-title">My Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-card" data-aos="fade-up">
+        <h4>Python</h4>
+        <p>Strong understanding of Python fundamentals with hands-on experience in writing clean, efficient code. Currently at an intermediate level, 
+          enhanced through practical projects and structured learning via Udemy and Coursera courses.</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <h4>MERN Stack</h4>
+        <p>Built several full-stack projects using the MERN stack, gaining a strong understanding of the development workflow—from frontend to backend. Enhanced skills
+           through hands-on experience and structured learning via LinkedIn Learning, Udemy, and Coursera</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <h4>Communication</h4>
+        <p>Fluent in English with strong verbal and written communication. Continuously improving language fluency through Duolingo and expanding vocabulary by regularly reading books and engaging with diverse content.
+
+</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+        <h4>Problem Solving</h4>
+        <p>Actively strengthening problem-solving abilities by practicing coding challenges on platforms like HackerRank, LeetCode, and CodeChef. Focused on improving logic, 
+          efficiency, and real-world application of algorithms and data structures</p>
+      </div>
+     
+    </div>
+  </section>
+
+
+    <!-- Projects Section -->
+  <section id="project" class="projects-section">
+    <h3 class="section-title">My Projects</h3>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="project-item">
+            <h4 class="project-title">Saas Image generator</h4>
+
+          <img src="images/download (8).png" />
+          <div class="buttons">
+            <a href="https://www.linkedin.com/posts/abishalinigovindasamy_im-excited-to-share-my-latest-project-activity-7340682525582741508-nUmu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFyQP0BpedVaVYy_x57X4QurfNbxKQxzs8" target="_blank" class="btn"> Demo</a>
+            <a href="https://github.com/AbishaliniGovindasamy/Image_genz.git" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+        <div class="project-item">
+          <h4 class="project-title">Netflix Clone</h4>
+
+          <img src="images/download (1).png" />
+          <div class="buttons">
+            <a href="https://www.linkedin.com/posts/abishalinigovindasamy_netflixclone-fullstackdevelopment-mernstack-activity-7314171717721935872-dV5w?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFyQP0BpedVaVYy_x57X4QurfNbxKQxzs8" target="_blank" class="btn">Demo</a>
+            <a href="https://github.com/AbishaliniGovindasamy/mern-netflix-clone.git" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+        <div class="project-item">
+          <h4 class="project-title">Weather App</h4>
+
+          <img src="images/download (7).png" />
+          <div class="buttons">
+            <a href="https://www.linkedin.com/posts/abishalinigovindasamy_floya-weatherapp-mernstack-activity-7319245660187238400-mWbs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFyQP0BpedVaVYy_x57X4QurfNbxKQxzs8" target="_blank" class="btn"> Demo</a>
+            <a href="https://github.com/AbishaliniGovindasamy/Weather-App.git" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+        <div class="project-item">
+          <h4 class="project-title">Task Manager</h4>
+
+          <img src="images/download (5).png" />
+          <div class="buttons">
+            <a href="https://www.linkedin.com/posts/abishalinigovindasamy_fullstackdeveloper-mernstack-webdevelopment-activity-7313166463899418624-8f23?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFyQP0BpedVaVYy_x57X4QurfNbxKQxzs8" target="_blank" class="btn"> Demo</a>
+            <a href="https://github.com/AbishaliniGovindasamy/TaskManage-Mern.git" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+          <div class="project-item">
+            <h4 class="project-title">Blog Platform</h4>
+
+          <img src="images/download (3).png" />
+          <div class="buttons">
+            <a href="https://www.linkedin.com/posts/abishalinigovindasamy_mernstack-fullstackdevelopment-webdevelopment-activity-7312500184595275777-sbgE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFyQP0BpedVaVYy_x57X4QurfNbxKQxzs8" target="_blank" class="btn"> Demo</a>
+            <a href="https://github.com/AbishaliniGovindasamy/Mern-Blog.git" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Certificates Section -->
+ <section id="certificate" class="certificates-section">
+  <h3 class="section-title">My Certificates</h3>
+  <div class="certificates-grid">
+
+    <!-- Certificate 1: With verification link -->
+    <div class="certificate-card" data-aos="zoom-in">
+      <img src="Coursera_backend/Coursera_backend-1.png" alt="Backend Certificate" />
+      <div class="certificate-title">Backend</div>
+      <a href="Coursera_backend/Coursera_backend-1.png" target="_blank" class="verify-button">View</a>
+    </div>
+
+    <!-- Certificate 2: No verification link, just view full screen -->
+    <div class="certificate-card" data-aos="zoom-in" data-aos-delay="100">
+      <img src="promptessentials/promptessentials-1.png" alt="MERN Stack Certificate" />
+      <div class="certificate-title">Prompt Essentials</div>
+      <a href="promptessentials/promptessentials-1.png" target="_blank" class="verify-button">View</a>
+    </div>
+
+    <!-- Certificate 3: No verification link, just view full screen -->
+    <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="Coursera XCR38JXYRX39/Coursera XCR38JXYRX39-1.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">python</div>
+      <a href="Coursera XCR38JXYRX39/Coursera XCR38JXYRX39-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+
+
+    <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="coursera certificate/guvi Ai.jpg" alt="UI/UX Certificate" />
+      <div class="certificate-title">Guvi AI</div>
+      <a href="coursera certificate/guvi Ai.jpg" target="_blank" class="verify-button">View </a>
+    </div>
+
+    <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="coursera certificate/udemy blog.jpg" alt="UI/UX Certificate" />
+      <div class="certificate-title">Blog</div>
+      <a href="coursera certificate/udemy blog.jpg" target="_blank" class="verify-button">View </a>
+    </div>
+
+    <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="Coursera 7DQTXEFHNZU6/Coursera 7DQTXEFHNZU6-1.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">Python</div>
+      <a href="Coursera 7DQTXEFHNZU6/Coursera 7DQTXEFHNZU6-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+
+
+    <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="coursera certificate/udemy react.jpg" alt="UI/UX Certificate" />
+      <div class="certificate-title">FrontEnd</div>
+
+
+      <a href="Coursera XCR38JXYRX39/Coursera XCR38JXYRX39-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+     <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="coursera certificate/udemy python.jpg" alt="UI/UX Certificate" />
+      <div class="certificate-title">Python</div>
+      <a href="coursera certificate/udemy python.jpg" target="_blank" class="verify-button">View </a>
+    </div><div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="coursera certificate/guvi html.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">Python Basic</div>
+
+      <a href="Coursera XCR38JXYRX39/Coursera XCR38JXYRX39-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+    
+    <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="Coursera software/Coursera software-1.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">Software</div>
+      <a href="Coursera software/Coursera software-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+
+    <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="LinkedIn Learning Certificate/LinkedIn Learning Certificate-1.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">Fullstackdevelopment</div>
+      <a href="LinkedIn Learning Certificate/LinkedIn Learning Certificate-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+
+    <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="LinkedIn Learning Certificate1/LinkedIn Learning Certificate1-1.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">Frontend</div>
+      <a href="LinkedIn Learning Certificate1/LinkedIn Learning Certificate1-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+
+     <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="python_basic certificate (1)/python_basic certificate (1)-1.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">python</div>
+      <a href="python_basic certificate/python_basic certificate-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+
+     <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="software_engineer_intern certificate (1)/software_engineer_intern certificate (1)-1.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">Software</div>
+      <a href="software_engineer_intern certificate (1)/software_engineer_intern certificate (1)-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+
+     <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="sql_basic certificate (1)/sql_basic certificate (1)-1.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">Sql Basic</div>
+      <a href="sql_basic certificate (1)/sql_basic certificate (1)-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+
+     <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="sql_advanced certificate (1)/sql_advanced certificate (1)-1.png" alt="UI/UX Certificate" />
+      <div class="certificate-title">Sql Advance</div>
+      <a href="sql_advanced certificate/sql_advanced certificate-1.png" target="_blank" class="verify-button">View </a>
+    </div>
+
+  </div>
+</section>
+
+
+  
+
+  <!-- Scripts -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.4/build/spline-viewer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="app.js"></script>
+</body>
+</html>
