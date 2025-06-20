@@ -1,5 +1,3 @@
-// app.js
-
 // GSAP plugins are already loaded via CDN in the HTML file
 const gsap = window.gsap;
 const ScrollTrigger = window.ScrollTrigger;
@@ -98,7 +96,7 @@ function autoSlide() {
 }
 setInterval(autoSlide, 2500);
 
-// Smooth scroll for nav links
+// Smooth scroll for nav links & close mobile menu
 const navLinks = document.querySelectorAll("nav a, .mobile-menu a, .cta-button");
 navLinks.forEach(link => {
   link.addEventListener("click", function (e) {
@@ -106,7 +104,14 @@ navLinks.forEach(link => {
     if (href && href.startsWith("#")) {
       e.preventDefault();
       const target = document.querySelector(href);
-      if (target) target.scrollIntoView({ behavior: "smooth" });
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+
+        // ✅ Close mobile menu if open
+        if (mobileMenu.classList.contains("active")) {
+          mobileMenu.classList.remove("active");
+        }
+      }
     }
   });
 });
